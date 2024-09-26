@@ -9,7 +9,7 @@
 </head>
 <body>
     @include('partials.header')
-    <main>
+    <main class="mt-5">
         @yield('cont')
     </main>
     @include('partials.footer')
