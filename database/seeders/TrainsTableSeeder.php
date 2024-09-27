@@ -18,9 +18,9 @@ class TrainsTableSeeder extends Seeder
     {
         for($k=0; $k<30; $k++) {
             $train = new Train();
-            $train->azienda = $faker->words(3, true);
-            $train->stazione_di_partenza = $faker->words(4, true);
-            $train->stazione_di_arrivo = $faker->words(4, true);
+            $train->azienda = $faker->company();
+            $train->stazione_di_partenza = $faker->city();
+            $train->stazione_di_arrivo = $faker->city();
             $train->orario_di_partenza = $faker->time();
             $train->orario_di_arrivo = $faker->time();
             $train->codice_treno = $faker->bothify('?????#');

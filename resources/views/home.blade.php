@@ -44,7 +44,7 @@
                     <td class="text-uppercase">{{$train_info->codice_treno}}</td>
                     <td>{{$train_info->numero_carrozze}}</td>
                     @if (!$train_info->in_orario)
-                        <td>Treno in ritardo</td>
+                        <td class="{{$train_info->cancellato ? 'text-decoration-line-through' : ''}}">Treno in ritardo</td>
                     @else
                         <td class="{{$train_info->cancellato ? 'text-decoration-line-through' : ''}}">Treno in orario</td>
                     @endif
